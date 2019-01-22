@@ -39,4 +39,12 @@ public class GenericArrayList<T> {
         return true;
     }
 
+    public T get(int index)
+    {
+        //kontrol
+        if (index < 0 || index >= m_index)
+            throw new ArrayIndexOutOfBoundsException("index < 0 || index >= m_index");
+
+        return m_elems[index];
+    }
 }
