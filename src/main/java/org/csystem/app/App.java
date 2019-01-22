@@ -6,6 +6,7 @@ public class App {
     public static void main(String[] args)
     {
         //elemenları string olan veri yapısı.
-        GenericArrayList<String> list = new GenericArrayList<String>();
+        GenericArrayList<String> list = new GenericArrayList<>();
+        list.add("ankara");
     }
 }
